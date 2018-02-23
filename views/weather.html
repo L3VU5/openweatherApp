@@ -1,0 +1,105 @@
+<div class="container main">
+			<div class="today row" ng-controller="MainController">
+				<div class="left col-lg-4">
+					<div class="top row">
+						<p>Weather in {{weather.name}}, {{weather.sys.country}}</p>
+						<img ng-src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png"/>
+						<span class="deg" >{{weather.main.temp}}°C</span>
+					</div>
+					<div class="bot">
+						
+						<p>{{weather.weather[0].description|uppercase}}</p>
+					</div>
+				</div>
+				<div class="right col-lg-8">
+					<div class="city"><a data-toggle="modal" href="#myModal">{{weather.name|uppercase}} - CHANGE</a></div>
+					
+					<div class="more row">
+					<div class="col-lg-4">
+					<li>Weather: {{weather.weather[0].main}}</li>
+					<li>Pressure: {{weather.main.pressure}} hPa</li>
+					</div>
+					<div class="col-lg-4">
+					<li>Minimum temperature: {{weather.main.temp_min}}°C</li>
+					<li>Maximum temperature: {{weather.main.temp_max}}°C</li>
+					</div>
+					<div class="col-lg-4">
+					<li>Wind: {{weather.wind.speed}} m/s</li>
+					<li>Humidity: {{weather.main.humidity}}%</li>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="fiveday row" ng-controller="ForecastController">
+				<div class="col-lg-2 day">
+					<h5>DAY 1</h5>
+					<img ng-src="http://openweathermap.org/img/w/{{forecast.list[7].weather[0].icon}}.png"/>
+					{{forecast.list[7].main.temp}}°C
+					<ul>
+						<li>Weather: {{forecast.list[7].weather[0].main}}</li>
+						<li>Minimum temperature: {{forecast.list[7].main.temp_min}}°C</li>
+						<li>Maximum temperature: {{forecast.list[7].main.temp_max}}°C</li>
+						<li>Pressure: {{forecast.list[7].main.pressure}} hPa</li>
+						<li>Wind: {{forecast.list[7].wind.speed}} m/s</li>
+						<li>Humidity: {{forecast.list[7].main.humidity}}%</li>
+					</ul>
+				</div>
+					
+				<div class="col-lg-2 day">
+					<h5>DAY 2</h5>
+					<img ng-src="http://openweathermap.org/img/w/{{forecast.list[15].weather[0].icon}}.png"/>
+					{{forecast.list[15].main.temp}}°C
+					<ul>
+						<li>Weather: {{forecast.list[15].weather[0].main}}</li>
+						<li>Minimum temperature: {{forecast.list[15].main.temp_min}}°C</li>
+						<li>Maximum temperature: {{forecast.list[15].main.temp_max}}°C</li>
+						<li>Pressure: {{forecast.list[15].main.pressure}} hPa</li>
+						<li>Wind: {{forecast.list[15].wind.speed}} m/s</li>
+						<li>Humidity: {{forecast.list[15].main.humidity}}%</li>
+					</ul>
+				</div>
+					
+				<div class="col-lg-2 day">
+					<h5>DAY 3</h5>
+					<img ng-src="http://openweathermap.org/img/w/{{forecast.list[23].weather[0].icon}}.png"/>
+					{{forecast.list[23].main.temp}}°C
+					<ul>
+						<li>Weather: {{forecast.list[23].weather[0].main}}</li>
+						<li>Minimum temperature: {{forecast.list[23].main.temp_min}}°C</li>
+						<li>Maximum temperature: {{forecast.list[23].main.temp_max}}°C</li>
+						<li>Pressure: {{forecast.list[23].main.pressure}} hPa</li>
+						<li>Wind: {{forecast.list[23].wind.speed}} m/s</li>
+						<li>Humidity: {{forecast.list[23].main.humidity}}%</li>
+					</ul>
+				</div>
+					
+				<div class="col-lg-2 day">
+					<h5>DAY 4</h5>
+					<img ng-src="http://openweathermap.org/img/w/{{forecast.list[31].weather[0].icon}}.png"/>
+					{{forecast.list[31].main.temp}}°C
+					<ul>
+						<li>Weather: {{forecast.list[31].weather[0].main}}</li>
+						<li>Minimum temperature: {{forecast.list[31].main.temp_min}}°C</li>
+						<li>Maximum temperature: {{forecast.list[31].main.temp_max}}°C</li>
+						<li>Pressure: {{forecast.list[31].main.pressure}} hPa</li>
+						<li>Wind: {{forecast.list[31].wind.speed}} m/s</li>
+						<li>Humidity: {{forecast.list[31].main.humidity}}%</li>
+					</ul>
+				</div>
+					
+				<div class="col-lg-2 day">
+					<h5>DAY 5</h5>
+					<img ng-src="http://openweathermap.org/img/w/{{forecast.list[36].weather[0].icon}}.png"/>
+					{{forecast.list[36].main.temp}}°C
+					<ul>
+						<li>Weather: {{forecast.list[36].weather[0].main}}</li>
+						<li>Minimum temperature: {{forecast.list[36].main.temp_min}}°C</li>
+						<li>Maximum temperature: {{forecast.list[36].main.temp_max}}°C</li>
+						<li>Pressure: {{forecast.list[36].main.pressure}} hPa</li>
+						<li>Wind: {{forecast.list[36].wind.speed}} m/s</li>
+						<li>Humidity: {{forecast.list[36].main.humidity}}%</li>
+					</ul>
+				</div>
+			</div>
+		</div>

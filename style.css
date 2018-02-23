@@ -1,0 +1,59 @@
+body {
+  background-image: url("background.jpeg");
+  background-size: cover;
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  margin-top: 30px;
+  height: 600px; }
+  body p, body ul {
+    margin: 0px;
+    padding: 0px; }
+  body li {
+    list-style: none; }
+  body .main {
+    margin: 4% auto; }
+    body .main .today {
+      border-bottom: 1px solid #1497b3;
+      color: white;
+      text-shadow: 1px 2px 5px #000; }
+      body .main .today .left {
+        padding: 10.5px 0;
+        text-align: center; }
+        body .main .today .left .top .deg {
+          font-size: 3em; }
+      body .main .today .right .city {
+        text-align: center;
+        padding: 10px 0; }
+        body .main .today .right .city a {
+          color: white;
+          text-shadow: 1px 2px 5px #000; }
+      body .main .today .right .modal {
+        color: black;
+        text-shadow: none; }
+      body .main .today .right .more {
+        padding: 11px 0;
+        font-size: 15px;
+        border-top: 1px solid #1497b3;
+        text-align: center; }
+        body .main .today .right .more li {
+          padding: 5px 0; }
+          body .main .today .right .more li:nth-last-child(1) {
+            border-top: 1px solid #b0d5dd; }
+    body .main .fiveday {
+      text-align: center; }
+      body .main .fiveday .day {
+        border: 1px solid #1497b3;
+        margin: 19px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #666; }
+        body .main .fiveday .day ul {
+          text-align: left;
+          font-size: 13px;
+          padding: 10px 0; }
+          body .main .fiveday .day ul li {
+            border-bottom: 1px solid #b0d5dd;
+            padding: 4px 0; }
+            body .main .fiveday .day ul li:nth-last-child(1) {
+              border-bottom: none; }
+
+/*# sourceMappingURL=style.css.map */
